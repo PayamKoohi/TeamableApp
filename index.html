@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="user-profile">
+        <h1>User Profile</h1>
+        <img src="payam.jpg" alt="">
+
+        <span>Name: </span><b>Payam Koohi</b>
+        <hr/>
+
+        <span>Email: </span><b>payam.koohii@gmail.com</b>
+        <hr/>
+
+        <span>Interest: </span><b>Coding</b>
+        <hr/>
+
+        <button onclick="handleEditProfile()">Edit Profile</button>
+    </div>
+
+    <div id="edit-profile">
+        <h1>Edit Profile</h1>
+        <img src="payam.jpg" alt="">
+
+        <span>Name: </span>
+        <input type="text" placeholder="Payam Koohi">
+        <hr/>
+
+        <span>Email: </span>
+        <input type="text" placeholder="payam.koohii@gmail.com">
+        <hr/>
+
+        <span>Interest: </span>
+        <input type="text" placeholder="Coding">
+        <hr/>
+
+        <button onclick="handleUpdateProfile()">Update Profile</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
