@@ -12,16 +12,16 @@
         <h1>User Profile</h1>
         <img src="payam.jpg" alt="">
 
-        <span>Name: </span><b>Payam Koohi</b>
+        <span>Name: </span><b id="name">Payam Koohi</b>
         <hr/>
 
-        <span>Email: </span><b>payam.koohii@gmail.com</b>
+        <span>Email: </span><b id="email">payam.koohii@gmail.com</b>
         <hr/>
 
-        <span>Interest: </span><b>Coding</b>
+        <span>Interest: </span><b id="interests">Coding</b>
         <hr/>
 
-        <button onclick="handleEditProfile()">Edit Profiles</button>
+        <button onclick="handleEditProfile()">Edit Profile</button>
     </div>
 
     <div id="edit-profile">
@@ -29,19 +29,20 @@
         <img src="payam.jpg" alt="">
 
         <span>Name: </span>
-        <input type="text" placeholder="Payam Koohi">
+        <input type="text" id="input-name" placeholder="Payam Koohi">
         <hr/>
 
         <span>Email: </span>
-        <input type="text" placeholder="payam.koohii@gmail.com">
+        <input type="text" id="input-email" placeholder="payam.koohii@gmail.com">
         <hr/>
 
         <span>Interest: </span>
-        <input type="text" placeholder="Coding">
+        <input type="text" id="input-interests" placeholder="Coding">
         <hr/>
 
         <button onclick="handleUpdateProfile()">Update Profile</button>
     </div>
 </body>
 <script src="app.js"></script>
+<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
 </html>
